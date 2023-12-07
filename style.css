@@ -1,0 +1,123 @@
+/* Estilos do body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #57b846;
+  background-size: cover; 
+  background-position: center;
+}
+
+
+
+/* Estilos do container de login */
+.login-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0.1, 0.1, 0.1, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  scale:(1);
+  transition: 0.5s ease;
+}
+
+.login-container:hover{
+  transition: 0.5s ease;
+  transform: scale(1.06);
+}
+
+
+p{
+  font-size: 0.95rem;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #0056b3;
+}
+.error {
+  text-align: left;
+  font-weight: 500;
+  display: none;
+  color: tomato;
+}
+
+/* Estilos dos rótulos (labels) */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  text-align: left;
+}
+
+
+/* Estilos dos campos de texto e senha */
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Ajusta a largura para incluir padding e borda */
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Inclui padding e borda na largura */
+}
+
+
+input[type="submit"] {
+  width: 100%; 
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #57b846;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+/* Estilos do botão de submissão no hover */
+input[type="submit"]:hover {
+  transition: 0.6s;
+  background-color:  rgb(0, 128, 38);
+}
+
+/* Estilos dos containers dos campos de entrada */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Estilos dos rótulos dentro dos containers dos campos de entrada */
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
