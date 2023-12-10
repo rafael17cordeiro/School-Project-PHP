@@ -1,14 +1,12 @@
+
 <?php
 session_start();
-
 // Verifica se o usuário não está logado, redireciona para a página de login
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
-?>         
-
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +26,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <i class="bx bx-x" id="close-icon"></i>
         </label>
             <nav class="navigation">
-                <a href="terapeutas.php">Therapists</a>
-                <a href="contact.php">Contact</a>
+                <a style="color:#00ad5c;"href="terapeutas.php">Therapists</a>
+                <a  href="contact.php">Contact</a>
                 <?php
 
 // Verifica se o usuário está logado
@@ -42,7 +40,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 ?>
 
             </nav>
-        </header>   
+        </header>
 
     <div class="titulo-banner">
         <div class="titulo">

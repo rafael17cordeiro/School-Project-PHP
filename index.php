@@ -24,7 +24,7 @@ session_start();
 
 // Verifica se o usuário está logado
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    echo "<a href='profile.php'><i class='bx bxs-user'> </i>"  . $_SESSION["username"] . "</a>";
+    echo "<a href='profile.php'><i class='bx bxs-user'></i>" . $_SESSION["username"] . "</a>";
 
 } else {
     echo '<a class="loginBtn" href="login.php"><button>Login</button></a>';
@@ -51,19 +51,19 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                         <h1>60$/session</h1>
                         <h5>Therapist Details:</h5><br>
                         <p>Jackie Chan <br>5 years of experience</p><br>
-                        <a  href="terapeutas.php"><button class="moreBtn">View Therapist</button></a>
+                        <a  href=""><button class="moreBtn">View Therapist</button></a>
                     </div>
                     <div class="carta-bigger">
                         <h1>90$/session</h1>
                         <h5>Therapist Details:</h5><br>
                         <p>Joaquin Phoenix <br>15 years of experience</p><br>   
-                        <a  href="terapeutas.php"><button class="moreBtn">View Therapist</button></a>
+                        <a  href=""><button class="moreBtn">View Therapist</button></a>
                     </div>
                     <div class="carta">
                         <h1>40$/session</h1>
                         <h5>Therapist Details:</h5><br>
                         <p>Ross Geller <br>1 years of experience</p><br>
-                        <a href="terapeutas.php"><button class="moreBtn" >View Therapist</button></a>
+                        <a href=""><button class="moreBtn" >View Therapist</button></a>
                     </div>
                 </div>
         </div>
