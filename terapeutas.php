@@ -85,7 +85,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             <div class="card">
             <img src="img/las vegas.jpg" alt="">
                 <h3>Las Vegas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
                <button class="terapeutaBtn">Purchase Session</button>
             </div>
             

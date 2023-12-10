@@ -70,21 +70,16 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     </div>
 
     <div class="depoimentos">
+    
+    <div class="texto">
+       <h1>MyMind Can Help You</h1><br>  
+       <p>MyMind can help anyone that struggles with mental health problems with guided therapy sessions.</p><br>
+       <p>Although therapy in Canada is available, it is not cheap and fees can range from $50-$240 per session. Many people with mental health problems require 12-16 sessions on average and only 50 percent of patients recover as indicated by self-reported symptom measures.</p>
+    </div>
     <div class="imagem">
        <img src="img/hero.jpg" alt="">
     </div>
-    <div class="texto">
-       <h1>MyMind Can Help You</h1><br>  
-       <p>MyMind can help anyone that struggles with mental health problems with guided therapy sessions.</p>
-       <p>Although therapy in Canada is available, it is not cheap and fees can range from $50-$240 per session. Many people with mental health problems require 12-16 sessions on average and only 50 percent of patients recover as indicated by self-reported symptom measures.</p>
-    </div>
-    
 </div>
-<footer>
-        <div class="footer-content">
-            <p>&copy; 2023 MyMind. All rights reserved.</p>
-        </div>
-    </footer>
 
 
 </body>
