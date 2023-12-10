@@ -1,0 +1,52 @@
+:root {
+    --primaryColor: #00ad5c;
+    --secondaryColor: #008245;
+  }
+
+
+
+  body {
+    
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image:url(img/nature.jpg);
+    background-size: cover;
+}
+
+.contact-card {
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffffe5;
+    color: #666;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info {
+    font-family: Arial, sans-serif;
+}
+
+.contact-info h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+

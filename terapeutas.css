@@ -1,0 +1,74 @@
+:root {
+    --primaryColor: #00ad5c;
+    --secondaryColor: #008245;
+  }
+  .titulo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-image: url(img/nature2.jpg);
+    background-attachment: fixed;
+    margin-top: 100px;
+    height: 30vh;
+    background-color: #008245;
+  }
+  
+  .titulo {
+    display: flex;
+    align-items: center;/* Para centralizar horizontalmente */
+    width: 80%;
+    color: white; /* Adicionei para o texto ser visível no fundo preto */
+  }
+
+
+
+
+  .titulo h1{
+    font-size: 4.2rem;
+  }
+  
+
+
+  /* Estilos para a estrutura de grid */
+.cards {
+  padding: 50px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 colunas responsivas */
+  gap: 20px; /* Espaçamento entre as cartas */
+}
+
+
+.card {
+  color: #666;
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+  padding: 20px;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 400px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Mantém a proporção e corta o excesso se necessário */
+}
+
+
+
+.terapeutaBtn{
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 50px; 
+    background-color: var(--primaryColor);
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 500;
+}
+
+.terapeutaBtn:hover{
+  transition: 0.6s;
+  background-color: #008245;
+}

@@ -1,3 +1,14 @@
+  @keyframes fadeInAnimation {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+  
   * {
     box-sizing: border-box !important;
     margin: 0;
@@ -38,7 +49,7 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-
+    margin-bottom: 100px;
 
   }
 
@@ -137,7 +148,22 @@ html{
         text-align: center;
     }
   }
+  .loginBtn button {
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid var(--primaryColor);
+    padding: 1px 30px;
+    font-size: 1em;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    color: #666;  
+  }
 
+  .loginBtn button:hover {
+    transition: all 0.3s ease;
+    background-color: var(--primaryColor);  
+    color: white; 
+  }
   .navigation a {
     position: relative;
     font-size: 1.2em;
@@ -199,11 +225,13 @@ html{
 
   }
   .sessions-content{
+    
     width: 100%;         
     margin: 0 auto; 
   }
 
   .sessions .titulo {
+    
     text-align: center;
     padding: 100px 100px;
     font-size: 3.5rem; 
@@ -250,31 +278,42 @@ html{
   transform: scale(1.1);
 }
 
-  .loginBtn button {
-    border-radius: 20px;
-    border: 2px solid var(--primaryColor);
-    padding: 2px 18px;
-    background-color: transparent;
-    transition: all 0.3s ease;
-    color: #666;
-    font-weight: 500;
-  }
 
-  .loginBtn button:hover {
-    transition: all 0.3s ease;
-    background-color: var(--primaryColor);  
-    color: white; 
-  }
 
-  .moreBtn button{
-    border-radius: 20px;
-    border: 2px solid var(--primaryColor);
-    padding: 8px 50px; 
-    background-color: var(--primaryColor);
-    transition: all 0.3s ease;
-    color: white;
-    font-weight: 500;
-  }
+.moreBtn{
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 50px; 
+  background-color: var(--primaryColor);
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 500;
+}
+
+.moreBtn:hover{
+transition: 0.6s;
+background-color: #008245;
+}
+
+.scrollBtn{
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 50px; 
+  background-color: var(--primaryColor);
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 500;
+}
+
+.scrollBtn:hover{
+transition: 0.6s;
+background-color: #008245;
+}
 
   .depoimentos {
     display: flex;
@@ -294,7 +333,6 @@ html{
   height: auto; 
   max-width: 100%; 
 }
-/* Footer styles */
 footer {
   background-color: #ffffff;
   color: #666;

@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Home</title>
@@ -16,17 +16,28 @@
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class="bx bx-x" id="close-icon"></i>
         </label>
-        <nav class="navigation">
-            <a href="home.html">Therapists</a>
-            <a href="about.html">Contact</a>
-            <a class="loginBtn" href=""><button>Login</button></a>
-        </nav>
-    </header>
+            <nav class="navigation">
+                <a href="terapeutas.php">Therapists</a>
+                <a href="contact.php">Contact</a>
+                <?php
+session_start();
+
+// Verifica se o usuário está logado
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    echo "<a href='profile.php'><i class='bx bxs-user'> </i>"  . $_SESSION["username"] . "</a>";
+
+} else {
+    echo '<a class="loginBtn" href="login.php"><button>Login</button></a>';
+}
+?>
+
+            </nav>
+        </header>
 
     <div class="welcome-section">
         <div class="welcome-content">
             <h1>Our legacy speaks through our healed clients</h1>
-            <a class="moreBtn" href="#sessions"><button>More About it</button></a>
+            <a  href="#sessions"><button class="scrollBtn">More About it</button></a>
         </div>
     </div>
 
@@ -39,22 +50,20 @@
                     <div class="carta">
                         <h1>60$/session</h1>
                         <h5>Therapist Details:</h5><br>
-                        <p>Jackie Chan <br>5 years of experience</p>
-                        <a class="moreBtn" href=""><button>View Therapist</button></a>
+                        <p>Jackie Chan <br>5 years of experience</p><br>
+                        <a  href="terapeutas.php"><button class="moreBtn">View Therapist</button></a>
                     </div>
                     <div class="carta-bigger">
                         <h1>90$/session</h1>
                         <h5>Therapist Details:</h5><br>
-                        <p>Joaquin Phoenix <br>15 years of experience</p>
-                       
-                        <a class="moreBtn" href=""><button>View Therapist</button></a>
+                        <p>Joaquin Phoenix <br>15 years of experience</p><br>   
+                        <a  href="terapeutas.php"><button class="moreBtn">View Therapist</button></a>
                     </div>
                     <div class="carta">
                         <h1>40$/session</h1>
                         <h5>Therapist Details:</h5><br>
-                        <p>Ross Geller <br>1 years of experience</p>
-                   
-                        <a class="moreBtn" href=""><button>View Therapist</button></a>
+                        <p>Ross Geller <br>1 years of experience</p><br>
+                        <a href="terapeutas.php"><button class="moreBtn" >View Therapist</button></a>
                     </div>
                 </div>
         </div>
