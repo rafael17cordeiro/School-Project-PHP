@@ -1,55 +1,65 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: #666;
-    background-image: url(img/nature.jpg);
-    background-size: cover;
-  }
-  
+  margin: 0;
+  padding: 0;
+  color: #666;
+  background-image: url(img/nature.jpg);
+  background-size: cover;
+  font-family: Arial, sans-serif; /* Adding a generic font-family for better cross-browser compatibility */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Adding a maximum width to prevent it from becoming too wide */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.821);
+  border-radius: 8px;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 0 20px;
   }
-  
-  .image {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .image img {
-    width: 100%;
-    background-size: cover;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+
   .login-form {
-    width: 50%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.821);
-    border-radius: 8px;
-  }
-  
-  .login-form h1 {
-    text-align: center;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .input-group input {
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
-  
- 
+
+  .input-group input {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

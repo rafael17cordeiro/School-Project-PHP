@@ -44,15 +44,21 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
      
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<div class="contact-card">
+        <div class="contact-card">
+    <div class="contact-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.7139197462857!2d-8.814724523487875!3d39.74607659618368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22736babbc5e2b%3A0x3b1d0d49e6b4c24f!2sEscola%20Secund%C3%A1ria%20Domingos%20Sequeira!5e0!3m2!1spt-PT!2spt!4v1702170826370!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <div class="contact-info">
         <h1>My Mind</h1>
-        <h3>Designer & Developer</h3><br>
+        <h3>Make you feel free</h3><br>
         <p><i class='bx bxs-envelope'></i> johndoe@example.com</p>
         <p><i class='bx bxs-phone'></i> +1234567890</p>
         <p><i class='bx bxs-map'></i> 123 Main Street, City, Country</p>
         <p><i class='bx bxs-message'></i> Leave a message</p>
     </div>
+</div>
+
+
 </div>
 
 
