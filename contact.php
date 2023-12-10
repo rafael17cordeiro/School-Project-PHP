@@ -29,7 +29,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="terapeutas.php">Therapists</a>
                 <a style="color:#00ad5c;" href="contact.php">Contact</a>
                 <?php
-session_start();
 
 // Verifica se o usuário está logado
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
