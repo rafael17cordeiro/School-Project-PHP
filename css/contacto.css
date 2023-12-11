@@ -1,20 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: #666;
-  background-image: url(img/nature.jpg);
-  background-size: cover;
-  font-family: Arial, sans-serif; /* Adding a generic font-family for better cross-browser compatibility */
-}
-
-.container {
+.contact-section {
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background-attachment: fixed;
+  color: #666;
+  background-image: url(../img/nature.jpg);
+  background-size: cover;
 }
 
-.login-form {
+.contact-content {
   width: 80%;
   max-width: 600px;
   padding: 20px;
@@ -22,7 +17,7 @@ body {
   border-radius: 8px;
 }
 
-.login-form h1 {
+.contact-content h1 {
   text-align: center;
   margin-top: 0;
   font-size: 2rem;
@@ -44,17 +39,24 @@ body {
   border: 1px solid #ccc;
 }
 
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 /* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  .container {
+  .contact-section {
     padding: 0 20px;
   }
 
-  .login-form {
+  .contact-content {
     width: 100%;
     max-width: 100%;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.821);
   }
 
   .input-group input {
