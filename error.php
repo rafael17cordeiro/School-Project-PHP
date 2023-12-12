@@ -35,14 +35,14 @@
 
     </nav>
   </header>
-<div class="container">
-  <div class="popup" id="popup">
-    <img src="img/decline.png" alt="">
-    <h2>There's a problem</h2>
-    <p>You dont have acess to this page!</p>
-    <p>Make sure to <a href="">Log in</a></p>
-    <a href="index.php"><button style="margin-top: 20px;" class="moreBtn" type="submit">OK</button></a><br>
-  </div>
+  <div class="container">
+    <div class="popup" id="popup">
+      <img src="img/decline.png" alt="">
+      <h2>There's a problem</h2>
+      <p>You dont have acess to this page!</p>
+      <p>Make sure to <a href="login.php">Log in</a></p>
+      <a href="index.php"><button style="margin-top: 20px;" class="moreBtn" type="submit">OK</button></a><br>
+    </div>
   </div>
   <script src="js/app.js"></script>
 </body>

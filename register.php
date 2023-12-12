@@ -25,34 +25,40 @@
             <?php
             session_start();
 
+            // Verifica se o usuário está logado
             if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-                echo "<a href='profile.php'><i class='bx bxs-user'></i>"  . $_SESSION["username"] . "</a>";
+                echo "<a href='profile.php'><i class='bx bxs-user'> </i>"  . $_SESSION["username"] . "</a>";
             } else {
                 echo '<a class="loginBtn" href="login.php"><button>Login</button></a>';
             }
             ?>
 
-
         </nav>
     </header>
     <div class="container">
         <div class="login-form">
-            <h1>Login</h1>
-            <form action="processar_login.php" method="post">
+            <h1>Register</h1>
+            <form action="processar_register.php" method="post">
                 <div class="input-group">
                     <label for="username"><i class='bx bxs-user'></i> Username:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="input-group">
+                    <label for="gmail"><i class='bx bxs-envelope'></i> Gmail:</label>
+                    <input type="text" id="gmail" name="gmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone"><i class='bx bxs-phone'></i> Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+
+                <div class="input-group">
                     <label for="password"><i class='bx bxs-lock-alt'></i> Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 <div class="input-group">
-                    <button class="moreBtn" type="submit">Login</button><br>
+                    <button class="moreBtn" type="submit">Register</button><br>
                 </div>
-                <center>
-                    <p>Dont have a acount ? <a href="register.php">Register</a></p>
-                </center>
             </form>
         </div>
     </div>

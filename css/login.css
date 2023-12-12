@@ -1,6 +1,3 @@
-
- 
-
 .container {
   min-height: 110vh;
   display: flex;
@@ -24,6 +21,13 @@
   text-align: center;
   margin-top: 0;
   font-size: 2rem;
+}
+
+.login-form a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  color: #008245;
 }
 
 .input-group {

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div class="loader"></div>
+    <div class="loader"></div>
     <header>
         <a href="index.php"><img class="logo" src="img/logo.png" alt=""></a>
         <input type="checkbox" id="check">
@@ -35,32 +35,38 @@
 
         </nav>
     </header>
-    <div class="container">
-        <div class="login-form">
-            <h1>Profile</h1>
-            <form action="processar_login.php" method="post">
-                <?php
+    <?php
+    session_start(); // Certifique-se de iniciar a sessão no início da página
 
-                // Verifica se o usuário está logado
-                if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-                    echo '<div class="input-group">';
-                    echo '<label for="username"><i class="bx bxs-user"></i> Username:</label>';
-                    echo '<input type="text" id="username" name="username" value="' . $_SESSION["username"] . '" readonly>';
-                    echo '</div>';
-                    echo '<div class="input-group">';
-                    echo '<label for="gmail"><i class="bx bxs-envelope"></i> Gmail:</label>';
-                    echo '<input type="text" id="gmail" name="gmail" value="' . $_SESSION["gmail"] . '" readonly>';
-                    echo '</div>';
-                    echo '<div class="input-group">';
-                    echo '<label for="phone"><i class="bx bxs-phone"></i> Phone Number:</label>';
-                    echo '<input type="text" id="phone" name="phone" value="' . $_SESSION["phone"] . '" readonly>';
-                    echo '</div>';
-                }
-                ?>
-                <button class="moreBtn" type="submit" name="logout"><i class='bx bx-log-out'></i> Logout</button>
-            </form>
-        </div>
-    </div>
+    // Verifica se o usuário está logado
+    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+        echo '<div class="container">';
+        echo '<div class="login-form">';
+        echo '<h1>Profile</h1>';
+        echo '<div class="input-group">';
+        echo '<label for="username"><i class="bx bxs-user"></i> Username:</label>';
+        echo '<input type="text" id="username" name="username" value="' . $_SESSION["username"] . '" readonly>';
+        echo '</div>';
+        echo '<div class="input-group">';
+        echo '<label for="gmail"><i class="bx bxs-envelope"></i> Gmail:</label>';
+        echo '<input type="text" id="gmail" name="gmail" value="' . $_SESSION["gmail"] . '" readonly>';
+        echo '</div>';
+        echo '<div class="input-group">';
+        echo '<label for="phone"><i class="bx bxs-phone"></i> Phone Number:</label>';
+        echo '<input type="text" id="phone" name="phone" value="' . $_SESSION["phone"] . '" readonly>';
+        echo '</div>';
+        echo '<form action="processar_logout.php" method="post">';
+        echo '<button class="moreBtn" type="submit" name="logout"><i class="bx bx-log-out"></i> Logout</button>';
+        echo '</form>';
+        echo '</div>';
+        echo '</div>';
+    } else {
+        // Se o usuário não estiver logado, redirecione para a página de login
+        header("Location: login.php");
+        exit();
+    }
+    ?>
+
 
     <script src="js/app.js"></script>
 </body>
