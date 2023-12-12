@@ -11,4 +11,14 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe((el)))
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
 
+    setTimeout(() => {
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    }, 500); 
+});

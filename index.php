@@ -9,7 +9,8 @@
     <title>Home</title>
 </head>
 
-<body class="hidden">
+<body class="">
+    <div class="loader"></div>
     <header>
         <a href="index.php"><img class="logo" src="img/logo.png" alt=""></a>
         <input type="checkbox" id="check">
@@ -82,7 +83,7 @@
         </div>
     </div>
 
-    <script src="js/app.js"></script>
+ <script src="js/app.js"></script>
 </body>
 
 </html>

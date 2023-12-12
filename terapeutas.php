@@ -18,7 +18,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <title>Therapist</title>
 </head>
 
-<body class="hidden">
+<body>
+<div class="loader"></div>
     <header>
         <a href="index.php"><img class="logo" src="img/logo.png" alt=""></a>
         <input type="checkbox" id="check">
