@@ -10,7 +10,7 @@
     <title>Login</title>
 </head>
 
-<body >
+<body>
     <div class="loader"></div>
     <header>
         <a href="index.php"><img class="logo" src="img/logo.png" alt=""></a>
@@ -59,6 +59,7 @@
                 <div class="input-group">
                     <button class="moreBtn" type="submit"><i class='bx bx-log-in'></i> Login</button><br>
                 </div>
+               <center> <p>Dont have a acount ? <a href="">Register</a></p></center>
             </form>
         </div>
     </div>

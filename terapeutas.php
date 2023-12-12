@@ -2,7 +2,7 @@
 session_start();
 // Verifica se o usuário não está logado, redireciona para a página de login
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
+    header("location: error.php");
     exit;
 }
 ?>
@@ -19,7 +19,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
-<div class="loader"></div>
+    <div class="loader"></div>
     <header>
         <a href="index.php"><img class="logo" src="img/logo.png" alt=""></a>
         <input type="checkbox" id="check">
@@ -53,19 +53,21 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="card ">
             <img src="img/rock.jpg" alt=""><br>
             <h3>The Rock</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
+            <p>Dwayne Johnson, aka The Rock, brings decades of experience as a public figure. His journey of overcoming challenges makes him a motivating therapist, blending empathy and determination to inspire others to reach their full potential.
+
+            </p><br>
             <button class="terapeutaBtn">Purchase Session</button>
         </div>
         <div class="card">
             <img src="img/ric.jpeg" alt=""><br>
             <h3>Ric Fazeres</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
+            <p>Ric Fazeres, a prominent figure in the gaming community, transitions his expertise into therapy. Leveraging his deep understanding of gaming culture, he fosters connections and aids individuals in navigating life's challenges.</p><br>
             <a href=""> <button class="terapeutaBtn">Purchase Session</button></a>
         </div>
         <div class="card">
             <img src="img/kaney.jpg" alt=""><br>
             <h3>Ye</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
+            <p>Kanye West, known for his musical prowess and creative vision, translates his unique perspective into therapy. His innovative approach and life experiences empower individuals, encouraging them to embrace their own distinct paths to personal growth.</p><br>
             <button class="terapeutaBtn">Purchase Session</button>
         </div>
 
@@ -73,19 +75,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="cards">
         <div class="card">
             <img src="img/rock.jpg" alt=""><br>
-            <h3>The Rock</h3>
+            <h3>The Rock</h3>br
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
             <button class="terapeutaBtn">Purchase Session</button>
         </div>
         <div class="card">
             <img src="img/ric.jpeg" alt=""><br>
-            <h3>Ric Fazeres</h3>
+            <h3>Ric Fazeres</h3><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
             <a href=""> <button class="terapeutaBtn">Purchase Session</button></a>
         </div>
         <div class="card">
             <img src="img/kaney.jpg" alt=""><br>
-            <h3>Ye</h3>
+            <h3>Ye</h3><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
             <button class="terapeutaBtn">Purchase Session</button>
         </div>

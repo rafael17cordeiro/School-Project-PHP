@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["gmail"] = $_POST["gmail"];
         $_SESSION["phone"] = $_POST["phone"];
         // Redireciona para o index.php após um login bem-sucedido
-        header("location: index.php");
+        header("location: sucess.php");
         exit;
     }
 }

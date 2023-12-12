@@ -70,7 +70,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -205,6 +205,16 @@ header h1 {
 
 .icons i {
   color: grey;
+}
+.container {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  color: #666;
+  background-image: url(../img/nature.jpg);
+  background-size: cover;
 }
 
 .welcome-section {
