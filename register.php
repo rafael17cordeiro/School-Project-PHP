@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>
@@ -63,7 +64,9 @@
         </div>
     </div>
 
-
+    <footer>
+    <p>&copy; 2023 NatureMind. All rights reserved.</p>
+  </footer>
 
     <script src="js/app.js"></script>
 </body>
