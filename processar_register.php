@@ -24,6 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION["gmail"] = $gmail;
     $_SESSION["phone"] = $phone;
 
+    setcookie("username", $username, time() + 3600, "/"); // Cookie válido por 1 hora
+    setcookie("loggedin", true, time() + 3600, "/"); // Cookie válido por 1 hora
+
+    
     // Redireciona para a página de sucesso após o registro
     header("Location: sucess.php");
 } else {

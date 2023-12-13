@@ -39,8 +39,9 @@
     <div class="popup" id="popup">
       <img src="img/decline.png" alt="">
       <h2>There's a problem</h2>
-      <p>You dont have acess to this page!</p>
+      <p>You dont have acess to this page!</p><br>
       <p>Make sure to <a href="login.php">Log in</a></p>
+      <p>Dont have a acount? <a href="register.php">Register</a></p>
       <a href="index.php"><button style="margin-top: 20px;" class="moreBtn" type="submit">OK</button></a><br>
     </div>
   </div>

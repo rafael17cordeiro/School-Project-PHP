@@ -18,7 +18,51 @@ window.addEventListener("load", () => {
         loader.classList.add("loader--hidden");
 
         loader.addEventListener("transitionend", () => {
-            document.body.removeChild(loader);
+           
         });
     }, 500); 
 });
+
+
+
+function togglePopup() {
+    var popup = document.getElementById("popup-1");
+    popup.classList.toggle("active");
+  
+    // Adiciona um atraso para aplicar a transição de fechamento
+    if (!popup.classList.contains("active")) {
+      var content = document.querySelector(".popup .content");
+      content.classList.add("closing");
+      setTimeout(function () {
+        content.classList.remove("closing");
+      }, 300); // Tempo igual à transição (0.3s = 300ms)
+    }
+  }
+  
+
+  function togglePopup2() {
+    var popup = document.getElementById("popup-2");
+    popup.classList.toggle("active");
+  
+    if (!popup.classList.contains("active")) {
+      var content = document.querySelector("#popup-2 .content");
+      content.classList.add("closing");
+      setTimeout(function () {
+        content.classList.remove("closing");
+      }, 300); // Tempo igual à transição (0.3s = 300ms)
+    }
+  }
+  
+  function togglePopup3() {
+    var popup = document.getElementById("popup-3");
+    popup.classList.toggle("active");
+  
+    if (!popup.classList.contains("active")) {
+      var content = document.querySelector("#popup-3 .content");
+      content.classList.add("closing");
+      setTimeout(function () {
+        content.classList.remove("closing");
+      }, 300); // Tempo igual à transição (0.3s = 300ms)
+    }
+  }
+  

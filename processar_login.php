@@ -21,6 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["username"] = $data[0]; // Nome de usuário
             $_SESSION["gmail"] = $data[1]; // Email
             $_SESSION["phone"] = $data[2]; // Número de telefone
+
+            setcookie("username", $data[0], time() + 3600, "/"); // Cookie válido por 1 hora
+            setcookie("loggedin", true, time() + 3600, "/"); // Cookie válido por 1 hora
+            
             $found = true;
             break;
         }
