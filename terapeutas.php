@@ -72,26 +72,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
 
     </div>
-    <div class="cards">
-        <div class="card">
-            <img src="img/rock.jpg" alt=""><br>
-            <h3>The Rock</h3>br
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
-            <button class="terapeutaBtn">Purchase Session</button>
-        </div>
-        <div class="card">
-            <img src="img/ric.jpeg" alt=""><br>
-            <h3>Ric Fazeres</h3><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
-            <a href=""> <button class="terapeutaBtn">Purchase Session</button></a>
-        </div>
-        <div class="card">
-            <img src="img/kaney.jpg" alt=""><br>
-            <h3>Ye</h3><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p><br>
-            <button class="terapeutaBtn">Purchase Session</button>
-        </div>
-
     </div>
 
     <script src="js/app.js"></script>
