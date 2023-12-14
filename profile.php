@@ -67,19 +67,23 @@
         echo '<div class="profile-picture">';
         if (isset($_SESSION["profile_picture"])) {
             // Se estiver definida, exibe a imagem de perfil do usuário
-            echo '<img src="' . $_SESSION["profile_picture"] . '" alt="Profile Picture">';
+            echo '<img src="' . $_SESSION["profile_picture"] . '" alt="Profile Picture" onclick="triggerFileInput()">';
         } else {
             // Se não estiver definida, exibe a imagem padrão ou uma mensagem indicando ausência de imagem
-            echo '<img src="img/user.png" alt="Default Profile Picture">';
+            echo '<img src="img/user.png" alt="Default Profile Picture" onclick="triggerFileInput()">';
         }
-    
         echo '</div>'; // Div para a imagem circular
         echo '<form action="upload_imagem.php" method="post" enctype="multipart/form-data" class="upload-form">';
-        echo '<input type="file" name="imagem" id="imagem" accept="image/*">';
+        echo '<input type="file" name="imagem" id="imagem" accept="image/*" style="display: none;">';
         echo '<button type="submit" class="uploadBtn"><i class="bx bx-upload"></i> Upload Image</button>';
         echo '</form>';
         echo '</div>';
-
+        echo '<script>';
+        echo 'function triggerFileInput() {';
+        echo '    document.getElementById("imagem").click();';
+        echo '}';
+        echo '</script>';
+        
         echo '</div>';
     } else {
         // Se o usuário não estiver logado, redirecione para a página de login

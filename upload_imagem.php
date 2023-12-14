@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["imagem"])) {
         header("Location: profile.php");
         exit();
     } else {
-        echo "Desculpe, ocorreu um erro ao enviar seu arquivo.";
+        header("location: profile.php");
     }
 } else {
     echo "Desculpe, o seu arquivo não foi enviado.";
